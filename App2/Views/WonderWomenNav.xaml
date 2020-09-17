@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App2.MainPage"
+             BackgroundImageSource="https://i.pinimg.com/originals/f2/a4/0f/f2a40fbda0ed20f984839afdad561447.png">
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Transparent">
+
+            <WebView x:Name="WonderWomen" WidthRequest="1000" HeightRequest="1000"/>
+            
+            <Button Grid.Row="0" Text="Esconder" BorderColor="#2b3c3c" BorderWidth="1"
+                FontAttributes="Bold" BackgroundColor="DarkGoldenrod" BorderRadius="35"
+                TextColor="White" HorizontalOptions="Start" WidthRequest="100" HeightRequest="60"
+                Margin="20,0,0,-64" VerticalOptions="End" x:Name="btnHide"        
+                 Clicked="BtnHide_Clicked"/>
+
+            <Button Grid.Row="0" Text="Chat" BorderColor="#2b3c3c" BorderWidth="1"
+                FontAttributes="Bold" BackgroundColor="#03a56a" BorderRadius="35"
+                TextColor="White" HorizontalOptions="Start" WidthRequest="100" HeightRequest="60"
+                Margin="20,0,0,-64" VerticalOptions="End" x:Name="btnShow"        
+                 Clicked="BtnShow_Clicked" IsVisible="False"/>
+
+            <Button Grid.Row="0" Text="Fechar" BorderColor="#2b3c3c" BorderWidth="1"
+                FontAttributes="Bold" BackgroundColor="#a30000" BorderRadius="35"
+                TextColor="White" HorizontalOptions="End" WidthRequest="100" HeightRequest="60"
+                Margin="0,0,20,22" VerticalOptions="End" x:Name="btnClose"        
+                 Clicked="BtnClose_Clicked"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
