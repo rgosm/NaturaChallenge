@@ -62,6 +62,7 @@ namespace App2
             WonderWomen.WidthRequest = 0;
             btnShow.IsVisible = true;
             btnHide.IsVisible = false;
+            fundo.BackgroundColor = Color.Transparent;
         }
 
         void BtnShow_Clicked(object sender, EventArgs e)
@@ -70,6 +71,7 @@ namespace App2
             WonderWomen.WidthRequest = 1000;
             btnShow.IsVisible = false;
             btnHide.IsVisible = true;
+            fundo.BackgroundColor = Color.White;
         }
 
         void BtnClose_Clicked(object sender, EventArgs e)

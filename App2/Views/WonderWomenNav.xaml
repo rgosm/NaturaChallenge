@@ -5,26 +5,26 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="App2.MainPage"
-             BackgroundImageSource="https://i.pinimg.com/originals/f2/a4/0f/f2a40fbda0ed20f984839afdad561447.png">
+             BackgroundImageSource="https://i.pinimg.com/originals/da/ee/1e/daee1ef515bd6c47aa9d19ae6cbabb3f.jpg">
 
     <ContentPage.Content>
-        <StackLayout BackgroundColor="Transparent">
+        <StackLayout x:Name="fundo" BackgroundColor="White">
 
             <WebView x:Name="WonderWomen" WidthRequest="1000" HeightRequest="1000"/>
             
-            <Button Grid.Row="0" Text="Esconder" BorderColor="#2b3c3c" BorderWidth="1"
+            <Button Text="Esconder" BorderColor="#2b3c3c" BorderWidth="1"
                 FontAttributes="Bold" BackgroundColor="DarkGoldenrod" BorderRadius="35"
                 TextColor="White" HorizontalOptions="Start" WidthRequest="100" HeightRequest="60"
                 Margin="20,0,0,-64" VerticalOptions="End" x:Name="btnHide"        
                  Clicked="BtnHide_Clicked"/>
 
-            <Button Grid.Row="0" Text="Chat" BorderColor="#2b3c3c" BorderWidth="1"
+            <Button Text="Chat" BorderColor="#2b3c3c" BorderWidth="1"
                 FontAttributes="Bold" BackgroundColor="#03a56a" BorderRadius="35"
                 TextColor="White" HorizontalOptions="Start" WidthRequest="100" HeightRequest="60"
                 Margin="20,0,0,-64" VerticalOptions="End" x:Name="btnShow"        
                  Clicked="BtnShow_Clicked" IsVisible="False"/>
 
-            <Button Grid.Row="0" Text="Fechar" BorderColor="#2b3c3c" BorderWidth="1"
+            <Button Text="Fechar" BorderColor="#2b3c3c" BorderWidth="1"
                 FontAttributes="Bold" BackgroundColor="#a30000" BorderRadius="35"
                 TextColor="White" HorizontalOptions="End" WidthRequest="100" HeightRequest="60"
                 Margin="0,0,20,22" VerticalOptions="End" x:Name="btnClose"        
